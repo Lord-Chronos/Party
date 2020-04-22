@@ -21,7 +21,6 @@ public class BST {
         System.out.println((nameC.compareTo(nameN)));
 
         if (nameN.compareTo(nameC) <= 0) {
-
             if (current.getL() == null) {
                 current.setL(newNode);
                 System.out.println("Left: " + nameN);
@@ -29,6 +28,7 @@ public class BST {
                 System.out.println("Recursive left: " + nameN);
                 recursive(current.getL(), newNode);
             }
+
         } else if (nameN.compareTo(nameC) > 0) {
             if (current.getR() == null) {
                 current.setR(newNode);
@@ -37,7 +37,6 @@ public class BST {
                 System.out.println("Recursive right: " + nameN);
                 recursive(current.getR(), newNode);
             }
-
         }
     }
 }
