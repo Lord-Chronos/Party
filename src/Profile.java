@@ -3,15 +3,15 @@ import java.util.Arrays;
 import java.util.PriorityQueue;
 
 public class Profile {
-    String lastName;
-    String firstName;
-    int day;
-    int month;
-    int year;
-    String email;
-    String[] interests;
-    String[] activitiesGroups;
-    ArrayList<Profile> friends;
+    private String lastName;
+    private String firstName;
+    private int day;
+    private int month;
+    private int year;
+    private String email;
+    private String[] interests;
+    private String[] activitiesGroups;
+    private ArrayList<Profile> friends;
 
     public Profile(String lastName, String firstName, int day, int month, int year, String email, String[] interests, String[] activitiesGroups) {
         this.firstName = firstName;
@@ -81,6 +81,7 @@ public class Profile {
 
     /**
      * Sets interests as users input
+     *
      * @param interests Interests of the profile
      */
     public void setInterests(String[] interests) {
@@ -89,6 +90,7 @@ public class Profile {
 
     /**
      * Sets activitiesGroups as users input
+     *
      * @param activitiesGroups Activities and groups that the profile takes part in
      */
     public void setActivitiesGroups(String[] activitiesGroups) {
@@ -97,6 +99,7 @@ public class Profile {
 
     /**
      * Gets the last name of profile
+     *
      * @return lastName from profile
      */
     public String getLastName() {
@@ -105,6 +108,7 @@ public class Profile {
 
     /**
      * Gets the first name of profile
+     *
      * @return firstName from profile
      */
     public String getFirstName() {
@@ -113,6 +117,7 @@ public class Profile {
 
     /**
      * Gets the day of birth of profile
+     *
      * @return day of birth from profile
      */
     public int getDay() {
@@ -121,6 +126,7 @@ public class Profile {
 
     /**
      * Gets the month of birth of profile
+     *
      * @return month of birth from profile
      */
     public int getMonth() {
@@ -129,6 +135,7 @@ public class Profile {
 
     /**
      * Gets the year of birth of profile
+     *
      * @return year of birth from profile
      */
     public int getYear() {
@@ -137,6 +144,7 @@ public class Profile {
 
     /**
      * Gets the full date of birth of profile
+     *
      * @return Date of birth in "dd/mm/yyyy" format
      */
     public String getDateOfBirth() {
@@ -145,6 +153,7 @@ public class Profile {
 
     /**
      * Gets the email of the profile
+     *
      * @return email linked to profile
      */
     public String getEmail() {
@@ -153,6 +162,7 @@ public class Profile {
 
     /**
      * Gets interests of profile
+     *
      * @return Array of profiles interests
      */
     public String[] getInterests() {
@@ -161,6 +171,7 @@ public class Profile {
 
     /**
      * Gets activities and groups that the profile takes part in
+     *
      * @return Array of activities and groups
      */
     public String[] getActivitiesGroups() {
@@ -169,6 +180,7 @@ public class Profile {
 
     /**
      * Adds the inputed friend to profiles friend list
+     *
      * @param p Profile of the friend to be added
      */
     public void addFriend(Profile p) {
@@ -177,6 +189,7 @@ public class Profile {
 
     /**
      * Returns friend from profile at specified index
+     *
      * @param i index location to get friend from
      * @return Friends profile at input position
      */
@@ -186,6 +199,7 @@ public class Profile {
 
     /**
      * Gets number of friends associated to this profile
+     *
      * @return size of friends list
      */
     public int numOfFriends() {
@@ -194,6 +208,7 @@ public class Profile {
 
     /**
      * Converts profile to string, for debug only
+     *
      * @return Profile info as string
      */
     public String toString() {
