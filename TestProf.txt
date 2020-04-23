@@ -1,0 +1,4 @@
+Kujo,Jotaro,12,4,1970,jotaro@gmail.com,fighting;edge;anime,killing;saving mum
+Murray,Joshua,9,3,2001,j.murray567@gmail.com,gaming;computers;books,swimming;coding
+Guniyangodage,Asinsa,12,11,2000,asinsa@hotmail.com,memes;TV,Sri Lanka;Gaming Soc
+Richardson,Alfie,7,10,2001,alfie@yahoo.co.uk,alfburst;anime,Google

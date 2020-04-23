@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.PriorityQueue;
 
 public class Profile {
     private String lastName;
@@ -13,7 +12,20 @@ public class Profile {
     private String[] activitiesGroups;
     private ArrayList<Profile> friends;
 
-    public Profile(String lastName, String firstName, int day, int month, int year, String email, String[] interests, String[] activitiesGroups) {
+    /**
+     * Constructor method for creation of a profile
+     *
+     * @param lastName         Last name of profile
+     * @param firstName        First name of profile
+     * @param day              Day of birth of the person
+     * @param month            Month of birth of the person
+     * @param year             Year of birth of the person
+     * @param email            Email address of profile
+     * @param interests        Interests of profile
+     * @param activitiesGroups Activities and groups profile takes part in
+     */
+    public Profile(String lastName, String firstName, int day, int month, int year,
+                   String email, String[] interests, String[] activitiesGroups) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.day = day;
@@ -46,7 +58,7 @@ public class Profile {
     /**
      * Sets day of birth as input
      *
-     * @param day Day of birth of profile
+     * @param day Day of birth of person
      */
     public void setDay(int day) {
         this.day = day;
@@ -55,7 +67,7 @@ public class Profile {
     /**
      * Sets month of birth as input
      *
-     * @param month Month of birth of profile
+     * @param month Month of birth of person
      */
     public void setMonth(int month) {
         this.month = month;
@@ -64,7 +76,7 @@ public class Profile {
     /**
      * Sets year of birth as input
      *
-     * @param year Year of birth of profile
+     * @param year Year of birth of person
      */
     public void setYear(int year) {
         this.year = year;
@@ -125,7 +137,7 @@ public class Profile {
     }
 
     /**
-     * Gets the month of birth of profile
+     * Gets the month of birth of person
      *
      * @return month of birth from profile
      */
@@ -134,7 +146,7 @@ public class Profile {
     }
 
     /**
-     * Gets the year of birth of profile
+     * Gets the year of birth of person
      *
      * @return year of birth from profile
      */
@@ -143,7 +155,7 @@ public class Profile {
     }
 
     /**
-     * Gets the full date of birth of profile
+     * Gets the full date of birth of person
      *
      * @return Date of birth in "dd/mm/yyyy" format
      */
