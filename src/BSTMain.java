@@ -13,15 +13,12 @@ public class BSTMain {
                 , "James@gmail.com", new String[]{"James"}, new String[]{"James"});
 
         BST tree = new BST();
-        //System.out.println(Ben.getFirstName().compareTo(James.getFirstName()));
-        //System.out.println(Josh.getFirstName().compareTo(James.getFirstName()));
 
         tree.insertProfile(Josh);
         tree.insertProfile(Ben);
         tree.insertProfile(James);
         tree.insertProfile(Ryan);
-        System.out.println();
-
+        // Tested via print statements in BST.java, now commented out
     }
 
 }

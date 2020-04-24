@@ -1,3 +1,5 @@
+import java.util.AbstractCollection;
+
 public class BST {
     private BSTNode root;
 
@@ -52,4 +54,26 @@ public class BST {
             }
         }
     }
+
+    /**
+     * Method calls inOrder method using root node as parameter
+     */
+    public void printAlphabetic() {
+        inOrder(root);
+    }
+
+    /**
+     * Traverses tree in order and prints out profile of all nodes
+     *
+     * @param node Current node that method is at
+     */
+    private void inOrder(BSTNode node) {
+        if (node != null) {
+            inOrder(node.getL());
+            System.out.println(node.getProfile());
+            inOrder(node.getR());
+        }
+    }
+
+
 }
