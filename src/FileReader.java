@@ -5,7 +5,12 @@ import java.util.Scanner;
 
 public class FileReader {
 
-
+    /**
+     * Reads file from disk then populates a binary search tree
+     *
+     * @param filename File to be read
+     * @return Tree created from file
+     */
     public static BST readProfileSet(String filename) {
         File inputFile = new File(filename);
         try {
@@ -19,6 +24,12 @@ public class FileReader {
         return null;
     }
 
+    /**
+     * Creates a tree then sends each line to createProfile method
+     *
+     * @param in Scanner of whole profile from readProfileSet
+     * @return Tree created from file
+     */
     private static BST readFile(Scanner in) {
         BST newTree = new BST();
         while (in.hasNextLine()) {
@@ -29,6 +40,12 @@ public class FileReader {
         return newTree;
     }
 
+    /**
+     * Reads a line and creates a profile
+     *
+     * @param line Scanner for line sent
+     * @return profile created from line
+     */
     private static Profile createProfile(Scanner line) {
         line.useDelimiter(",");
         String lastName = line.next();
@@ -39,9 +56,8 @@ public class FileReader {
         String email = line.next();
         String[] interests = line.next().split(";");
         String[] activities = line.next().split(";");
-        Profile next = new Profile(lastName, firstName, day, mon, year, email, interests, activities);
-        System.out.println(next.toString());
-        return next;
+        Profile nextProfile = new Profile(lastName, firstName, day, mon, year, email, interests, activities);
+        System.out.println(nextProfile.toString()); // Prints node being created
+        return nextProfile;
     }
-
 }
