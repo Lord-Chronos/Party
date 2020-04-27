@@ -1,3 +1,10 @@
+/**
+ * Profile.java
+ * Class that Creates profiles based on a set of inputted attributes
+ *
+ * @author Joshua MUrray
+ * @version 1.0
+ */
 import java.util.ArrayList;
 import java.util.Arrays;
 

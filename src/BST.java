@@ -1,5 +1,10 @@
-import java.util.AbstractCollection;
-
+/**
+ * BST.java
+ * Class that constructs a binary search tree out of profiles
+ *
+ * @author Joshua MUrray
+ * @version 1.0
+ */
 public class BST {
     private BSTNode root;
 
@@ -30,8 +35,8 @@ public class BST {
      */
     private void recursive(BSTNode current, BSTNode newNode) {
 
-        String nameC = ((current.getProfile().getFirstName()) + current.getProfile().getLastName());
-        String nameN = ((newNode.getProfile().getFirstName()) + newNode.getProfile().getLastName());
+        String nameC = ((current.getProfile().getLastName()) + current.getProfile().getFirstName());
+        String nameN = ((newNode.getProfile().getLastName()) + newNode.getProfile().getFirstName());
 
         // If nameN smaller go down to the left node
         if (nameN.compareTo(nameC) <= 0) {
@@ -49,7 +54,7 @@ public class BST {
                 current.setR(newNode);
                 //System.out.println("Right: " + nameN);
             } else {
-                //System.out.println("Recursive right: " + nameN);
+                ///System.out.println("Recursive right: " + nameN);
                 recursive(current.getR(), newNode);
             }
         }
@@ -74,6 +79,4 @@ public class BST {
             inOrder(node.getR());
         }
     }
-
-
 }

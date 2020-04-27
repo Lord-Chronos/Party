@@ -1,3 +1,10 @@
+/**
+ * BSTNode.java
+ * Class that creates nodes that can be added to binary search trees
+ *
+ * @author Joshua MUrray
+ * @version 1.0
+ */
 public class BSTNode {
     private Profile data;
     private BSTNode l;

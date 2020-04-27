@@ -1,3 +1,10 @@
+/**
+ * AlphaMain.java
+ * Class to test the printAlphabetic method in BST.java
+ *
+ * @author Joshua Murray
+ * @version 1.0
+ */
 public class AlphaMain {
     public static void main(String[] args) {
         Profile A = new Profile("A", "A", 9, 3, 2001

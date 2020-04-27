@@ -1,6 +1,12 @@
+/**
+ * FileReader.java
+ * Class that reads a file of profiles and inserts them into a BST
+ *
+ * @author Joshua MUrray
+ * @version 1.0
+ */
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class FileReader {
