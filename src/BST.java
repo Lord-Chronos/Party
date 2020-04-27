@@ -14,6 +14,7 @@ public class BST {
 
     /**
      * Inserts a profile as a node into the tree
+     * If there is no root sets the new node to root
      *
      * @param p Profile to be added to the tree+
      */
@@ -48,7 +49,7 @@ public class BST {
                 recursive(current.getL(), newNode);
             }
 
-            // If nameN bigger go down to the left node
+        // If nameN bigger go down to the left node
         } else if (nameN.compareTo(nameC) > 0) {
             if (current.getR() == null) {
                 current.setR(newNode);
